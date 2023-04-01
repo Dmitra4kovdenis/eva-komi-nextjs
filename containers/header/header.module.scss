@@ -1,12 +1,25 @@
+@use 'styles/mixins';
+@use 'styles/media';
+
 .container {
   background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  max-width: 1400px;
-  margin: 0 auto;
+  @include mixins.layout;
+
+  @include media.for-tablet {
+    // переопределение стилей для планшетной версии
+    background: red;
+  }
+
+  @include media.for-phone {
+    // переопределение стилей для мобильной версии
+    background: gray;
+  }
 }
+
 .logo {
   color: red;
 

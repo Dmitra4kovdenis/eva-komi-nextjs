@@ -1,0 +1,22 @@
+@use 'styles/media';
+
+@mixin layout {
+  width: 1400px;
+  margin: 0 auto;
+
+  @include media.for-laptop {
+    width: 100%;
+    padding: 0 48px;
+  }
+
+  @include media.for-tablet {
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  @include media.for-phone {
+    width: 100%;
+    padding: 0 24px;
+  }
+}
+

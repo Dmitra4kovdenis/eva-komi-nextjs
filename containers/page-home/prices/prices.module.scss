@@ -1,0 +1,46 @@
+@use '/styles/mixins';
+@use '/styles/media';
+@use '/styles/typography';
+
+.container {
+  @include mixins.layout;
+  margin-top: 240px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  justify-content: flex-end;
+}
+
+.titleWrapper {
+  width: 50%;
+  padding: 0 10px 24px;
+
+  @include media.for-tablet {
+    width: 66.66%;
+  }
+
+  @include media.for-phone {
+    width: 100%;
+  }
+}
+
+.title {
+  @include typography.h2
+}
+
+.cardWrapper {
+  width: 25%;
+  padding: 0 10px 24px;
+
+  @include media.for-tablet {
+    width: 50%;
+  }
+
+
+  @include media.for-phone {
+    width: 100%;
+  }
+}

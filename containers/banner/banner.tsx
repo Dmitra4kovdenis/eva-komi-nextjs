@@ -8,10 +8,10 @@ export const Banner: FC = () => {
         alt=""
         src="/background-photo-banner.svg"
       />
-      ;
-      <div className={css.carBanner}>
-        <img alt="" src="/car-banner.svg" />
+      <a>
+      <button className={css.button}></button>
+      </a>
+        <img className={css.carBanner} alt="" src="/car-banner.svg" />
       </div>
-    </div>
-  );
-};
+  )
+}

@@ -12,6 +12,8 @@ export const Banner: FC = () => {
       <button className={css.button}></button>
       </a>
         <img className={css.carBanner} alt="" src="/car-banner.svg" />
+      <span className={css.textBanner}>Быстрая, надежная и безопасная эвакуация автомобилей!</span>
+      <span className={css.textBanner2}>Эвакуация автомобилей по Сыктывкару и Республике Коми</span>
       </div>
   )
 }

@@ -1,0 +1,24 @@
+@use "styles/mixins";
+@use "styles/typography";
+@use "styles/media";
+
+.container {
+  @include mixins.layout;
+  display: flex;
+  margin-top: 200px;
+
+}
+.leftBlock {
+  width: 40%;
+}
+.rightBlock {
+  width: 60%;
+}
+.image {
+width: 100%;
+}
+.title {
+  @include typography.h2;
+  margin-bottom: 140px;
+
+}

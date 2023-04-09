@@ -39,7 +39,8 @@
 
 .button {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   right: 40px;
   bottom: 40px;
@@ -48,18 +49,23 @@
   border-radius: 40px;
   background-color: orange;
   color: aliceblue;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  cursor: pointer;
   transition: .9ms;
-  box-shadow: 0 0 6px 0 darkred;
 
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    background-color: #ff9900;
+  }
+
+  @include media.for-phone {
+    right: 24px;
+    bottom: 24px;
+  }
 }
-.button:active {
-  box-shadow: none;
-  transform: translateY(6px);
-}
+
 .title {
   text-align: center;
   @include typography.h1;

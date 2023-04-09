@@ -1,5 +1,6 @@
 import { FC } from "react";
 import css from "./banner.module.scss";
+import IconPhone from "@/assets/icons/icon-phone";
 export const Banner: FC = () => {
   return (
     <div className={css.banner}>
@@ -8,8 +9,8 @@ export const Banner: FC = () => {
         alt=""
         src="/background-photo-banner.svg"
       />
-      <a>
-        <button className={css.button}></button>
+      <a href="#" className={css.button}>
+        <IconPhone />
       </a>
       <img className={css.carBanner} alt="" src="/car-banner.svg" />
       <div className={css.content}>

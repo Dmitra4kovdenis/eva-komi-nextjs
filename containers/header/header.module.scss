@@ -2,22 +2,20 @@
 @use 'styles/media';
 
 .container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: white;
+}
+
+.wrapper {
+  width: 100%;
+  height: 80px;
+  @include mixins.layout;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  @include mixins.layout;
-
-  @include media.for-tablet {
-    // переопределение стилей для планшетной версии
-    background: red;
-  }
-
-  @include media.for-phone {
-    // переопределение стилей для мобильной версии
-    background: gray;
-  }
 }
 
 .logo {

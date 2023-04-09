@@ -1,14 +1,14 @@
 
 // медиа для ноутбука и маленького десктопного экрана
 @mixin for-laptop {
-  @media (min-width: 1024px) and (max-width: 1439px)  {
+  @media (max-width: 1439px)  {
     @content
   }
 }
 
 // медиа для планшета
 @mixin for-tablet {
-  @media (min-width: 768px) and (max-width: 1023px)  {
+  @media (max-width: 1023px)  {
     @content
   }
 }

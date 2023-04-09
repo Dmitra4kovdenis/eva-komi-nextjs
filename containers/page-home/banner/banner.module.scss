@@ -1,0 +1,77 @@
+@use '/styles/media';
+@use '/styles/typography';
+@use '/styles/mixins';
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mixins.layout;
+
+  margin-top: 100px;
+
+  @include media.for-phone {
+    margin-top: 200px;
+  }
+}
+
+.carBanner {
+  max-width: 100%;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.backgroundPhotoBanner {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 250px;
+  z-index: -1;
+
+  @include media.for-phone {
+    top: 300px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  background-color: orange;
+  color: aliceblue;
+  transition: .9ms;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    background-color: #ff9900;
+  }
+
+  @include media.for-phone {
+    right: 24px;
+    bottom: 24px;
+  }
+}
+
+.title {
+  text-align: center;
+  @include typography.h1;
+}
+.text {
+  text-align: center;
+  @include typography.body;
+}
+

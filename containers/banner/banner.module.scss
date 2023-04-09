@@ -5,12 +5,18 @@
   flex-direction: column;
   align-items: center;
 }
-.background {
-
+.backgroundPhotoBanner {
+  display: block;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  top: 250px;
+  z-index: -1;
 }
 .carBanner {
-  width: 80%;
-  margin-top: 10px;
+  width: 55%;
+  margin-top: 30px;
 
 }
 .button {
@@ -28,7 +34,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  transition: .5s;
+  transition: .9ms;
   box-shadow: 0 0 6px 0 darkred;
 
 }
@@ -36,12 +42,21 @@
   box-shadow: none;
   transform: translateY(6px);
 }
-.backgroundPhotoBanner {
-  display: block;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  width: 100%;
-  top: 290px;
-  z-index: -1;
+.textBanner {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 700;
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 900px;
 }
+.textBanner2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+

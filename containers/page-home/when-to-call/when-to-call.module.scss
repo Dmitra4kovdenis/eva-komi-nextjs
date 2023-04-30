@@ -6,23 +6,43 @@
   @include mixins.layout;
   display: flex;
   margin-top: 200px;
+  @include media.for-phone {
+    display: block;
+    margin-top: 50px;
+
+  }
 
 }
 
 .leftBlock {
   width: 40%;
+  @include media.for-phone {
+    width: 100%;
+  }
 }
 
 .rightBlock {
   width: 60%;
+  @include media.for-phone{
+    display: block;
+    width: 100%
+
+  }
 }
 
 .image {
   width: 100%;
+  @include media.for-phone{
+    width: 0%;
+  }
 }
 
 .title {
   @include typography.h2;
   margin-bottom: 140px;
+  @include media.for-phone{
+    margin-bottom: 20px;
+    width: 100%;
+  }
 
 }

@@ -11,6 +11,11 @@
   width: 50%;
   padding-left: 90px;
   margin-bottom: 70px;
+  @include media.for-phone{
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 0px;
+  }
 
 }
 .title {

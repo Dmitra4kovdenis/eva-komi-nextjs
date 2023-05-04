@@ -14,10 +14,10 @@
   width: 50%;
   padding-left: 120px;
   @include media.for-phone {
+    font-size: 22px;
     width: 100%;
     padding: 20px;
-    position: absolute;
-    text-align: center;
+    text-align: left;
   }
 }
 .image {

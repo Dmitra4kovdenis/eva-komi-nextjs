@@ -18,6 +18,7 @@
   width: 40%;
   @include media.for-phone {
     width: 100%;
+    padding-left: 10px;
   }
 }
 

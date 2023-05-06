@@ -6,6 +6,7 @@ import WorkGallery from "@/containers/page-home/work-gallery";
 import BannerRoad from "@/containers/page-home/banner-road";
 import Transportation from "@/containers/page-home/transportation";
 import CallBlock from "@/containers/page-home/call-block";
+import { Footer } from "@/containers/footer";
 
 export const PageHome: FC = () => {
   return (
@@ -17,6 +18,7 @@ export const PageHome: FC = () => {
       <BannerRoad />
       <Transportation />
       <CallBlock />
+      <Footer />
     </>
   );
 };

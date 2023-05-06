@@ -1,0 +1,72 @@
+@use "styles/mixins";
+@use "styles/typography";
+@use "styles/media";
+
+.container {
+background: #3F3F3F;
+
+}
+.logoContainer {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  margin-top: 80px;
+  margin-bottom: 90px;
+  width: 380px;
+  @include media.for-phone {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    width: 80%;
+
+  }
+}
+.line {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 1px solid #ACACAC;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+  margin-bottom: 70px;
+  @include media.for-phone {
+    display: block;
+  }
+}
+.phoneNumber {
+ @include typography.h1;
+  color: white;
+  padding-left: 40px;
+  @include media.for-phone {
+    padding-left: 25px;
+  }
+}
+
+.text {
+  color: white;
+  @include typography.h3;
+  padding-right: 40px;
+  @include media.for-phone {
+    padding-left: 25px;
+    margin-top: 60px;
+    @include typography.caption;
+  }
+}
+.container2 {
+  background: #2C2C2C;
+}
+.developer {
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  @include typography.h3;
+  margin: 0 ;
+  @include media.for-phone {
+    @include typography.body;
+    padding-left: 25px;
+  }
+}

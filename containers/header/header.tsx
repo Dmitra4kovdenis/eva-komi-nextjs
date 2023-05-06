@@ -14,7 +14,9 @@ export const Header: FC = () => {
           <span>круглосуточно, без выходных</span>
           <span>подача за 20 минут</span>
         </div>
-        <a className={css.phone}>89073328743</a>
+        <a className={css.phone} href="tel:89087153123">
+          89087153123
+        </a>
       </div>
       <ProgressBar />
     </div>

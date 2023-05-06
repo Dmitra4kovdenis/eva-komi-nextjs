@@ -9,7 +9,9 @@ export const CallBlock: FC = () => {
         позвоните нам <br />
         Или нажмите на номер ниже, звонок начнется автоматически
       </p>
-      <a className={css.phoneNumber}>+7 (908) 715 31-23</a>
+      <a className={css.phoneNumber} href="tel:89087153123">
+        +7 (908) 715 31-23
+      </a>
       <p className={css.text2}>Машина приедет в течении 20 минут</p>
     </div>
   );

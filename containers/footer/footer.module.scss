@@ -3,13 +3,16 @@
 @use "styles/media";
 
 .container {
-background: #3F3F3F;
+  background: #3F3F3F;
 
 }
+
 .logoContainer {
   display: flex;
   justify-content: center;
+  @include mixins.layout;
 }
+
 .logo {
   margin-top: 80px;
   margin-bottom: 90px;
@@ -21,52 +24,49 @@ background: #3F3F3F;
 
   }
 }
+
 .line {
-    margin-top: 60px;
-    margin-left: 40px;
-    margin-right: 40px;
-    border: 1px solid #ACACAC;
+  margin-top: 60px;
+  border: 1px solid #ACACAC;
+  border-bottom: 0;
 }
+
 .content {
   display: flex;
+  align-items: center;
+  @include mixins.layout;
   justify-content: space-between;
   margin-top: 36px;
   margin-bottom: 70px;
+
   @include media.for-phone {
     display: block;
   }
 }
+
 .phoneNumber {
- @include typography.h1;
+  font-size: 32px;
+  font-weight: bold;
   color: white;
-  padding-left: 40px;
-  @include media.for-phone {
-    padding-left: 25px;
-  }
 }
 
 .text {
   color: white;
-  @include typography.h3;
-  padding-right: 40px;
+  @include typography.body;
   @include media.for-phone {
-    padding-left: 25px;
-    margin-top: 60px;
-    @include typography.caption;
+    margin-top: 24px;
   }
 }
+
 .container2 {
   background: #2C2C2C;
 }
+
 .developer {
   color: white;
+  @include mixins.layout;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 40px;
-  @include typography.h3;
-  margin: 0 ;
-  @include media.for-phone {
-    @include typography.body;
-    padding-left: 25px;
-  }
+  @include typography.body;
 }
+

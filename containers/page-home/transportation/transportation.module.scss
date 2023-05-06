@@ -5,6 +5,7 @@
 .container {
   display: flex;
   align-items: center;
+  @include mixins.layout;
   @include media.for-phone  {
     display: block;
   }
@@ -16,7 +17,7 @@
   @include media.for-phone {
     font-size: 22px;
     width: 100%;
-    padding: 20px;
+    padding: 0;
     text-align: left;
   }
 }

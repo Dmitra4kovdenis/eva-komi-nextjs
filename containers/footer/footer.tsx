@@ -1,5 +1,6 @@
 import { FC } from "react";
 import css from "./footer.module.scss";
+import { phoneFull } from "@/constants";
 export const Footer: FC = () => {
   return (
     <div className={css.container}>
@@ -8,8 +9,8 @@ export const Footer: FC = () => {
       </div>
       <div className={css.line} />
       <div className={css.content}>
-        <a className={css.phoneNumber} href="tel:89087153123">
-          +7 (908) 715 31-23
+        <a className={css.phoneNumber} href={`tel:${phoneFull}`}>
+          {phoneFull}
         </a>
         <div className={css.text}>г. Сыктывкар, Республика Коми</div>
       </div>

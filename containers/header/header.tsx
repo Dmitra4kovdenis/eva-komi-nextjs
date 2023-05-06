@@ -1,6 +1,7 @@
 import { FC } from "react";
 import css from "./header.module.scss";
 import ProgressBar from "@/containers/header/progress-bar";
+import { phoneFull } from "@/constants";
 
 export const Header: FC = () => {
   return (
@@ -14,8 +15,8 @@ export const Header: FC = () => {
           <span>круглосуточно, без выходных</span>
           <span>подача за 20 минут</span>
         </div>
-        <a className={css.phone} href="tel:89087153123">
-          89087153123
+        <a className={css.phone} href={`tel:${phoneFull}`}>
+          {phoneFull}
         </a>
       </div>
       <ProgressBar />

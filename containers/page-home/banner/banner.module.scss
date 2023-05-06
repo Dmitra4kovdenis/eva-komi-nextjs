@@ -44,15 +44,15 @@
   position: fixed;
   right: 50px;
   bottom: 50px;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   border-radius: 50px;
   background-color: orange;
   color: aliceblue;
   transition: .9ms;
   @include media.for-phone {
     right: 25px;
-    bottom: 25  px;
+    bottom: 25px;
     height: 60px;
     width: 60px;
     border-radius: 30px;

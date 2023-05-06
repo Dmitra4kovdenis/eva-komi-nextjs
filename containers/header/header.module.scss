@@ -66,6 +66,7 @@
   font-weight: bold;
   font-size: 36px;
   color: black;
+  white-space: nowrap;
 
   @include media.for-phone {
     margin-left: 0;

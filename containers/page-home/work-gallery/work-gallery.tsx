@@ -1,4 +1,5 @@
 import css from "./work-gallery.module.scss";
+import Image from "next/image";
 
 const images = [
   "/gallery/gallery-1.jpg",
@@ -17,7 +18,13 @@ export const WorkGallery = () => {
       <div className={css.row}>
         {images.map((item, key) => (
           <div key={key} className={css.col}>
-            <img className={css.image} alt="" src={item} />
+            <Image
+              width={320}
+              height={240}
+              className={css.image}
+              alt={`image-gallery-${key}`}
+              src={item}
+            />
           </div>
         ))}
       </div>

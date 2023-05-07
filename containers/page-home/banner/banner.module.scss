@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include mixins.layout;
 
   margin-top: 100px;
 
@@ -17,9 +16,11 @@
 
 .carBanner {
   max-width: 100%;
+  object-fit: contain;
 }
 
 .content {
+  @include mixins.layout;
   max-width: 600px;
 }
 
@@ -30,6 +31,9 @@
   right: 0;
   width: 100%;
   top: 250px;
+  background: url("/background-photo-banner.svg") no-repeat center;
+  background-size: contain;
+  height: 300px;
   z-index: -1;
 
   @include media.for-phone {

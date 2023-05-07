@@ -1,11 +1,18 @@
 import { FC } from "react";
 import css from "./footer.module.scss";
 import { phoneFull } from "@/constants";
+import Image from "next/image";
 export const Footer: FC = () => {
   return (
     <div className={css.container}>
       <div className={css.logoContainer}>
-        <img className={css.logo} alt="logo" src="/eva-komi-logo%202.png" />
+        <Image
+          width={320}
+          height={100}
+          className={css.logo}
+          alt="logo"
+          src="/eva-komi-logo%202.png"
+        />
       </div>
       <div className={css.line} />
       <div className={css.content}>

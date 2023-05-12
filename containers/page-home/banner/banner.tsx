@@ -1,7 +1,7 @@
 import { FC } from "react";
 import css from "./banner.module.scss";
 import IconPhone from "@/assets/icons/icon-phone";
-import { phoneFull } from "@/constants";
+import { phoneCompact, phoneFull } from "@/constants";
 import Image from "next/image";
 
 export const Banner: FC = () => {
@@ -9,7 +9,7 @@ export const Banner: FC = () => {
     <div className={css.banner}>
       <div className={css.backgroundPhotoBanner} />
       <a
-        href={`tel:${phoneFull}`}
+        href={`tel:${phoneCompact}`}
         title={`Вызвать ${phoneFull}`}
         className={css.button}
       >

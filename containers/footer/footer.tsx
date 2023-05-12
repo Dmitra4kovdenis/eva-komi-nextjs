@@ -1,6 +1,6 @@
 import { FC } from "react";
 import css from "./footer.module.scss";
-import { phoneFull } from "@/constants";
+import { phoneCompact, phoneFull } from "@/constants";
 import Image from "next/image";
 export const Footer: FC = () => {
   return (
@@ -16,7 +16,7 @@ export const Footer: FC = () => {
       </div>
       <div className={css.line} />
       <div className={css.content}>
-        <a className={css.phoneNumber} href={`tel:${phoneFull}`}>
+        <a className={css.phoneNumber} href={`tel:${phoneCompact}`}>
           {phoneFull}
         </a>
         <div className={css.text}>г. Сыктывкар, Республика Коми</div>

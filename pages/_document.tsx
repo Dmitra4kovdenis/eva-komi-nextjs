@@ -33,6 +33,21 @@ export default function Document() {
 <!-- /Yandex.Metrika counter -->`,
           }}
         />
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HP1XWKG7JM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HP1XWKG7JM');
+</script>
+      `,
+          }}
+        />
       </body>
     </Html>
   );

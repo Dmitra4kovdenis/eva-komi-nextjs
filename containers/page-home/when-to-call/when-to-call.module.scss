@@ -33,8 +33,10 @@
 
 .image {
   width: 100%;
+  object-fit: cover;
+
   @include media.for-phone{
-    width: 0%;
+    display: none;
   }
 }
 

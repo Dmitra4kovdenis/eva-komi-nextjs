@@ -23,8 +23,11 @@
 }
 .image {
   width: 50%;
+  object-fit: contain;
+  height: 300px;
+
   @include media.for-phone {
-    width: max-content;
+    width: 100%;
   }
 }
 .title{

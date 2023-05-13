@@ -18,15 +18,15 @@
   margin-bottom: 90px;
   width: 380px;
   @include media.for-phone {
-    margin-top: 100px;
-    margin-bottom: 70px;
+    margin-top: 90px;
+    margin-bottom: 60px;
     width: 80%;
 
   }
 }
 
 .line {
-  margin-top: 60px;
+  margin-top: 0px;
   border: 1px solid #ACACAC;
   border-bottom: 0;
 }

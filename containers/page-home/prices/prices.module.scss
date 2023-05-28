@@ -18,6 +18,10 @@
   width: 50%;
   padding: 0 10px 24px;
 
+  @include media.for-laptop {
+    width: 33.33%;
+  }
+
   @include media.for-tablet {
     width: 66.66%;
   }
@@ -34,6 +38,10 @@
 .cardWrapper {
   width: 25%;
   padding: 0 10px 24px;
+
+  @include media.for-laptop {
+    width: 33.33%;
+  }
 
   @include media.for-tablet {
     width: 50%;

@@ -27,6 +27,6 @@ export const prices = [
     price: "2 000",
     title: "Перевозка груза",
     text: "Перевозка различного груза на эвакуаторе, массой до 4х тонн",
-    imageUrl: "/price-box.jpg",
+    imageUrl: "/price-box.webp",
   },
 ];

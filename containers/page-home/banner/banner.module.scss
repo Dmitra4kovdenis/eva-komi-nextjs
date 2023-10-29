@@ -81,8 +81,27 @@
   text-align: center;
   @include typography.h1;
 }
+
 .text {
   text-align: center;
   @include typography.body;
+}
+
+.socialMedia {
+  @include mixins.layout;
+  @include typography.caption;
+  margin-top: 40px;
+}
+
+.vk {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.vkImage {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
 }
 

@@ -1,23 +1,27 @@
 @use "styles/media";
+@use "styles/typography";
 
 .image {
   width: 100%;
   height: 260px;
-  margin-bottom: 28px;
+  margin-bottom: 8px;
   object-fit: cover;
 }
 
 .title {
-  font-size: 16px;
+  @include typography.body;
   font-weight: bold;
-  margin-bottom: 2px;
-  text-align: right;
+  margin-bottom: 8px;
+}
+
+.text {
+  @include typography.caption;
 }
 
 .price {
   font-size: 24px;
   font-weight: bold;
-  text-align: right;
+  margin-top: 16px;
 
   @include media.for-phone {
     font-size: 32px;

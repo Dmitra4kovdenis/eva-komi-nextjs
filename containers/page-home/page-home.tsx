@@ -8,11 +8,13 @@ import Transportation from "@/containers/page-home/transportation";
 import CallBlock from "@/containers/page-home/call-block";
 import { Footer } from "@/containers/footer";
 import ForCall from "@/containers/page-home/for-call";
+import { Advantages } from "@/containers/page-home/advantages/advantages";
 
 export const PageHome: FC = () => {
   return (
     <>
       <Banner />
+      <Advantages />
       <ForCall />
       <Prices />
       <WorkGallery />

@@ -1,0 +1,9 @@
+@use "styles/mixins";
+@use "styles/typography";
+@use "styles/media";
+
+.image {
+  @include mixins.layout;
+  display: flex;
+  align-items: center;
+}

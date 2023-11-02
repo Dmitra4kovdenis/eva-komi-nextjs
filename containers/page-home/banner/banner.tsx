@@ -19,7 +19,7 @@ export const Banner: FC = () => {
         <Image
           className={css.carBanner}
           alt="Баннер с эвакуатором"
-          src="/car-banner.png"
+          src="/car-banner.webp"
           width={900}
           height={500}
         />

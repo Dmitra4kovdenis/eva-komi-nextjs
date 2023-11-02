@@ -16,9 +16,9 @@ export const PageHome: FC = () => {
       <Banner />
       <Advantages />
       <ForCall />
-      <Prices />
       <WorkGallery />
       <WhenToCall />
+      <Prices />
       <BannerRoad />
       <Transportation />
       <CallBlock />

@@ -7,11 +7,13 @@ import BannerRoad from "@/containers/page-home/banner-road";
 import Transportation from "@/containers/page-home/transportation";
 import CallBlock from "@/containers/page-home/call-block";
 import { Footer } from "@/containers/footer";
+import ForCall from "@/containers/page-home/for-call";
 
 export const PageHome: FC = () => {
   return (
     <>
       <Banner />
+      <ForCall />
       <Prices />
       <WorkGallery />
       <WhenToCall />

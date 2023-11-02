@@ -1,0 +1,23 @@
+@use "styles/mixins";
+@use "styles/typography";
+@use "styles/media";
+.container {
+  display: flex;
+  @include mixins.layout;
+  margin-top: 80px;
+}
+.title {
+  @include mixins.layout;
+  @include typography.h1;
+}
+.titleText {
+}
+.phoneNumber {
+  &:hover {
+    color: #ff9900;
+  }
+
+}
+.text {
+  @include typography.body
+}

@@ -12,7 +12,7 @@ export const WhenToCall: FC = () => {
           alt={"car"}
           width={320}
           height={320}
-          src={"/when-to-call-image.png"}
+          src={"/when-to-call-image.webp"}
         />
       </div>
       <div className={css.rightBlock}>

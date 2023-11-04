@@ -14,6 +14,10 @@
 .title {
   @include mixins.layout;
   @include typography.h1;
+
+  @include media.for-phone {
+    padding: 0;
+  }
 }
 
 .titleText {
@@ -35,4 +39,8 @@
 
 .text {
   @include typography.body;
+
+  p {
+    margin: 12px 0;
+  }
 }

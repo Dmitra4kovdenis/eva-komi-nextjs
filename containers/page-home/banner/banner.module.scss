@@ -66,42 +66,39 @@
     width: 40px;
     height: 40px;
   }
+    &:hover {
+      background-color: #ff9900;
+    }
 
-  &:hover {
-    background-color: #ff9900;
+    @include media.for-phone {
+      right: 24px;
+      bottom: 24px;
+    }
   }
-
-  @include media.for-phone {
-    right: 24px;
-    bottom: 24px;
-  }
-}
-
 .title {
   text-align: center;
   @include typography.h1;
 }
+  .text {
+    text-align: center;
+    @include typography.body;
+  }
 
-.text {
-  text-align: center;
-  @include typography.body;
-}
+  .socialMedia {
+    @include mixins.layout;
+    @include typography.caption;
+    margin-top: 40px;
+  }
 
-.socialMedia {
-  @include mixins.layout;
-  @include typography.caption;
-  margin-top: 40px;
-}
+  .vk {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
 
-.vk {
-  display: flex;
-  align-items: center;
-  margin-top: 12px;
-}
-
-.vkImage {
-  margin-right: 10px;
-  width: 24px;
-  height: 24px;
-}
+  .vkImage {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
 

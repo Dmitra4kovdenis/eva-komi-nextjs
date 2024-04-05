@@ -23,9 +23,6 @@ export const Banner: FC = () => {
           width={900}
           height={500}
         />
-        <div className={css.toogleScene}>
-          <div className={css.toogleSceneCord}></div>
-        </div>
         <div className={css.content}>
           <h1 className={css.title}>
             Быстрая, надежная и безопасная эвакуация автомобилей!

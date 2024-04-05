@@ -21,7 +21,6 @@ export const PageHome: FC = () => {
       <Prices />
       <BannerRoad />
       <Transportation />
-      <CallBlock />
       <Footer />
     </>
   );

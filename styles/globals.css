@@ -94,6 +94,10 @@ a {
   text-decoration: none;
 }
 
+* {
+  line-height: 1.5em;
+}
+
 /*@media (prefers-color-scheme: dark) {*/
 /*  html {*/
     /*color-scheme: dark;*/

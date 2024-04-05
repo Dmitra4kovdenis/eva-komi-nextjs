@@ -32,6 +32,7 @@ export const Banner: FC = () => {
           </div>
         </div>
       </div>
+
       <div className={css.socialMedia}>
         <a
           href={"https://vk.com/evakyatorkomi"}

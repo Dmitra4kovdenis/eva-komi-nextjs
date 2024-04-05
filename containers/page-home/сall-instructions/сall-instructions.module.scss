@@ -1,0 +1,52 @@
+@use "styles/mixins";
+@use "styles/typography";
+@use "styles/media";
+
+.container {
+  @include mixins.layout;
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  @include media.for-phone {
+    display: block;
+  }
+}
+
+.card1 {
+  text-align: center;
+  width: 400px;
+  @include media.for-phone {
+    margin-bottom: 40px;
+  }
+}
+.li {
+  list-style-type: none;
+}
+.card2 {
+  text-align: center;
+  width: 400px;
+  @include media.for-phone {
+    margin-bottom: 40px;
+  }
+
+}
+
+.card3 {
+  text-align: center;
+  width: 400px;
+  @include media.for-phone {
+    margin-bottom: 40px;
+  }
+}
+
+.title {
+  margin-top: 30px;
+  @include typography.h3
+
+}
+
+.text {
+  @include typography.body
+}

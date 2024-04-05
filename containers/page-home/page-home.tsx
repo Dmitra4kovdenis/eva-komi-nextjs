@@ -9,6 +9,7 @@ import CallBlock from "@/containers/page-home/call-block";
 import { Footer } from "@/containers/footer";
 import ForCall from "@/containers/page-home/for-call";
 import { Advantages } from "@/containers/page-home/advantages/advantages";
+import CallInstructions from "@/containers/page-home/сall-instructions";
 
 export const PageHome: FC = () => {
   return (
@@ -21,6 +22,7 @@ export const PageHome: FC = () => {
       <Prices />
       <BannerRoad />
       <Transportation />
+      <CallInstructions />
       <Footer />
     </>
   );

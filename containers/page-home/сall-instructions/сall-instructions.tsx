@@ -6,6 +6,7 @@ import { phoneCompact } from "@/constants";
 export const CallInstructions: FC = () => {
   return (
     <div className={css.container}>
+      <div id="ForCall" className={css.yakor}></div>
       <div className={css.card1}>
         <Image
           className={css.image1}

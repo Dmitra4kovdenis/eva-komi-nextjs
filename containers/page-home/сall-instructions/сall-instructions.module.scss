@@ -3,6 +3,7 @@
 @use "styles/media";
 
 .container {
+  position: relative;
   @include mixins.layout;
   display: flex;
   align-items: center;
@@ -13,7 +14,10 @@
     display: block;
   }
 }
-
+.yakor{
+  top: -230px;
+  position: absolute;
+}
 .card1 {
   text-align: center;
   width: 400px;

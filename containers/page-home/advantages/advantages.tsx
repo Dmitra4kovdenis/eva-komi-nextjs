@@ -15,8 +15,8 @@ export const Advantages: FC = () => {
         />
         <div className={css.title}>Работаем 24/7</div>
         <div className={css.text}>
-          Работаем 24/7 без выходных.
-          <br /> Аккуратно и профессионально
+          Наш сервис доступен для вас <b>круглосуточно</b> и без выходных.
+          <br />
         </div>
       </div>
 
@@ -29,7 +29,10 @@ export const Advantages: FC = () => {
           height={160}
         />
         <div className={css.title}>Любая сложность работы</div>
-        <div className={css.text}>Готовы браться за самые сложные заказы</div>
+        <div className={css.text}>
+          Мы готовы принять самые <b>сложные заказы</b> и обеспечить{" "}
+          <b>высокое качество</b> выполненной работы.
+        </div>
       </div>
       <div className={css.card3}>
         <Image
@@ -40,7 +43,9 @@ export const Advantages: FC = () => {
           height={160}
         />
         <div className={css.title}>Быстро и не дорого</div>
-        <div className={css.text}>Подача по городу за 20 минут!</div>
+        <div className={css.text}>
+          Подача по городу за <b>15 минут!</b>
+        </div>
       </div>
     </div>
   );

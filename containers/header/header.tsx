@@ -13,7 +13,7 @@ export const Header: FC = () => {
         </div>
         <div className={css.center}>
           <span>круглосуточно, без выходных</span>
-          <span>подача за 20 минут</span>
+          <span>подача за 15 минут</span>
         </div>
         <a className={css.phone} href={`tel:${phoneCompact}`}>
           {phoneFull}

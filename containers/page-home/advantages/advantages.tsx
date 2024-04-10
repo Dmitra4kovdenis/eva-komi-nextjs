@@ -44,7 +44,7 @@ export const Advantages: FC = () => {
         />
         <div className={css.title}>Быстро и не дорого</div>
         <div className={css.text}>
-          Подача по городу за <b>15 минут!</b>
+          Подача по городу за <b>20 минут!</b>
         </div>
       </div>
     </div>

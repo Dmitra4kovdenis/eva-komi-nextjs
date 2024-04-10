@@ -7,7 +7,7 @@ export const ForCall: FC = () => {
     <div className={css.container}>
       <div className={css.title}>
         <div className={css.titleText}>
-          Не можешь двигаться сам? Позвони скорее нам!
+          Не можешь двигаться сам? Обратись скорее к нам!
         </div>
         <a href="#ForCall">
           <button className={css.btnForCall}>Как нас вызвать</button>

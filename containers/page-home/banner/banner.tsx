@@ -8,7 +8,7 @@ export const Banner: FC = () => {
   return (
     <>
       <div className={css.banner}>
-        <div id="ForCall" className={css.yakor}></div>
+        <div id="Banner" className={css.yakor}></div>
         <div className={css.backgroundPhotoBanner} />
         <a
           href={`tel:${phoneCompact}`}

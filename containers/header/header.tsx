@@ -8,8 +8,10 @@ export const Header: FC = () => {
     <div className={css.container}>
       <div className={css.wrapper}>
         <div className={css.logo}>
-          <img alt="logo" src="/eva-komi-logo.svg" />
-          <div>Сыктывкар и Республика Коми</div>
+          <a href="#Banner">
+            <img alt="logo" src="/eva-komi-logo.svg" />
+            <div>Сыктывкар и Республика Коми</div>
+          </a>
         </div>
         <div className={css.center}>
           <span>круглосуточно, без выходных</span>

@@ -37,11 +37,10 @@
   &:hover {
     color: black;
   }
- // box-shadow: 0 6px 0 darkorange;
- // .btnForCall :active {
- //   box-shadow: none;
- //   transform: translateY(6px);
- // }
+  @include media.for-phone {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .button {
 

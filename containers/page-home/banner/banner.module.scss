@@ -57,6 +57,7 @@
   background-color: orange;
   color: aliceblue;
   transition: .9ms;
+  z-index: 1;
   @include media.for-phone {
     right: 25px;
     bottom: 25px;

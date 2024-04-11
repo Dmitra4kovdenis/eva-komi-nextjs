@@ -5,6 +5,9 @@
 .container {
   @include mixins.layout;
   margin-top: 180px;
+  @include media.for-phone{
+    margin-top: 50px;
+  }
 }
 
 .row {

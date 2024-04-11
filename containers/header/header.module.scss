@@ -7,6 +7,9 @@
   left: 0;
   right: 0;
   background: white;
+  z-index: 1;
+
+
 }
 
 .wrapper {
@@ -67,12 +70,10 @@
   font-size: 36px;
   color: black;
   white-space: nowrap;
-
   @include media.for-phone {
     margin-left: 0;
     text-align: center;
     width: 100%;
-    font-size: 32px;
-    margin-bottom: 8px;
+    font-size: 26px;
   }
 }

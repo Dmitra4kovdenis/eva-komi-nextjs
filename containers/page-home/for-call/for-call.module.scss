@@ -13,7 +13,6 @@
 
 .title {
   @include mixins.layout;
-  @include typography.h1;
 
   @include media.for-phone {
     padding: 0;
@@ -21,12 +20,30 @@
 }
 
 .titleText {
+  @include typography.h1;
 }
-
-.phoneNumber {
+.btnForCall{
+  height: 60px;
+  width: 300px;
+  border-radius: 40px;
+  background-color: orange;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+  @include typography.h3;
   &:hover {
-    color: #ff9900;
+    color: black;
   }
+  @include media.for-phone {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.button {
+
 }
 
 .textMobile {
@@ -41,6 +58,6 @@
   @include typography.body;
 
   p {
-    margin: 12px 0;
+    margin: 12px 50px;
   }
 }

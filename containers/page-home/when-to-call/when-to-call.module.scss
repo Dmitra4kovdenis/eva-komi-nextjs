@@ -42,7 +42,7 @@
 
 .title {
   @include typography.h2;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
   @include media.for-phone{
     margin-bottom: 20px;
     width: 100%;

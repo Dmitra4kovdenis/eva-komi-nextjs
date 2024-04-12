@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import css from "./banner.module.scss";
 import IconPhone from "@/assets/icons/icon-phone";
 import { phoneCompact, phoneFull } from "@/constants";
@@ -8,6 +8,7 @@ export const Banner: FC = () => {
   return (
     <>
       <div className={css.banner}>
+        <div id="Banner" className={css.yakor}></div>
         <div className={css.backgroundPhotoBanner} />
         <a
           href={`tel:${phoneCompact}`}
@@ -25,7 +26,7 @@ export const Banner: FC = () => {
         />
         <div className={css.content}>
           <h1 className={css.title}>
-            Быстрая, надежная и безопасная эвакуация автомобилей!
+            Наши эвакуаторы – ваша безопасность на дороге.
           </h1>
           <div className={css.text}>
             Эвакуация автомобилей по Сыктывкару и Республике Коми

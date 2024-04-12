@@ -3,6 +3,7 @@
 @use "styles/media";
 
 .container {
+  position: relative;
   @include mixins.layout;
   display: flex;
   align-items: center;
@@ -13,12 +14,19 @@
     display: block;
   }
 }
-
+.anchor{
+  top: -230px;
+  position: absolute;
+  @include media.for-phone{
+    top: -150px;
+  }
+}
 .card1 {
   text-align: center;
   width: 400px;
   @include media.for-phone {
     margin-bottom: 40px;
+    width: 100%;
   }
 }
 .li {
@@ -29,6 +37,7 @@
   width: 400px;
   @include media.for-phone {
     margin-bottom: 40px;
+    width: 100%;
   }
 
 }
@@ -38,6 +47,7 @@
   width: 400px;
   @include media.for-phone {
     margin-bottom: 40px;
+    width: 100%;
   }
 }
 
@@ -48,5 +58,8 @@
 }
 
 .text {
-  @include typography.body
+  @include typography.body;
+  @include media.for-phone{
+    font-size: 15px;
+  }
 }

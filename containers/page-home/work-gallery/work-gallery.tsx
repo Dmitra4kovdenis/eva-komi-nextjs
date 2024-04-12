@@ -2,12 +2,12 @@ import css from "./work-gallery.module.scss";
 import Image from "next/image";
 
 const images = [
-  "/gallery/gallery 1.webp",
-  "/gallery/gallery 2.webp",
-  "/gallery/gallery 3.webp",
-  "/gallery/gallery 4.webp",
-  "/gallery/gallery 5.webp",
-  "/gallery/gallery 6.webp",
+  "/gallery/gallery-v2-1.webp",
+  "/gallery/gallery-v2-2.webp",
+  "/gallery/gallery-v2-3.webp",
+  "/gallery/gallery-v2-4.webp",
+  "/gallery/gallery-v2-5.webp",
+  "/gallery/gallery-v2-6.webp",
 ];
 
 export const WorkGallery = () => {

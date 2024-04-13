@@ -6,7 +6,7 @@ export const WhenToCall: FC = () => {
   return (
     <div className={css.container}>
       <div className={css.leftBlock}>
-        <h2 className={css.title}>Вызывайте эвакуатор, если у вас :</h2>
+        <h2 className={css.title}>Вызывайте эвакуатор, если у вас</h2>
         <Image
           className={css.image}
           alt={"car"}

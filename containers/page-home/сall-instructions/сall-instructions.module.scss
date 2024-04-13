@@ -2,18 +2,31 @@
 @use "styles/typography";
 @use "styles/media";
 
+.bg {
+  background: #F2F2F2;
+  margin-top: 160px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .container {
   position: relative;
   @include mixins.layout;
+}
+
+.row {
   display: flex;
-  align-items: center;
-  width: 1200px;
-  margin-top: 100px;
-  margin-bottom: 150px;
+  justify-content: space-between;
+
+  @include media.for-laptop {
+    display: block;
+  }
+
   @include media.for-phone {
     display: block;
   }
 }
+
 .anchor{
   top: -230px;
   position: absolute;
@@ -21,45 +34,62 @@
     top: -150px;
   }
 }
-.card1 {
+
+.h2 {
+  @include typography.h2;
+  margin-bottom: 64px;
+}
+
+.card {
   text-align: center;
-  width: 400px;
-  @include media.for-phone {
-    margin-bottom: 40px;
+  width: calc(100% / 3 - 24px);
+  box-shadow: 0 8px 24px rgba(106, 106, 106, 0.15);
+  background: white;
+  padding: 40px 24px;
+
+  @include media.for-laptop {
     width: 100%;
+    margin-bottom: 16px;
+    padding: 24px 60px;
+  }
+
+  @include media.for-phone {
+    width: 100%;
+    padding: 24px;
   }
 }
+
 .li {
   list-style-type: none;
-}
-.card2 {
-  text-align: center;
-  width: 400px;
-  @include media.for-phone {
-    margin-bottom: 40px;
-    width: 100%;
-  }
-
-}
-
-.card3 {
-  text-align: center;
-  width: 400px;
-  @include media.for-phone {
-    margin-bottom: 40px;
-    width: 100%;
-  }
+  margin-bottom: 4px;
 }
 
 .title {
   margin-top: 30px;
-  @include typography.h3
+  @include typography.body;
+  font-weight: bold;
+  margin-bottom: 8px;
 
+  @include media.for-phone {
+    margin-top: 16px;
+  }
 }
 
 .text {
-  @include typography.body;
+  @include typography.caption;
   @include media.for-phone{
     font-size: 15px;
+  }
+}
+
+.image {
+  height: 100px;
+
+  @include media.for-laptop {
+    height: 120px;
+  }
+
+  @include media.for-phone {
+    height: 80px;
   }
 }

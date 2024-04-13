@@ -11,6 +11,7 @@ import ForCall from "@/containers/page-home/for-call";
 import { Advantages } from "@/containers/page-home/advantages/advantages";
 import CallInstructions from "@/containers/page-home/сall-instructions";
 import VkBlock from "@/containers/page-home/vk-block/vk-block";
+import Faq from "@/containers/page-home/faq/faq";
 
 export const PageHome: FC = () => {
   return (
@@ -25,6 +26,7 @@ export const PageHome: FC = () => {
       <Transportation />
       <CallInstructions />
       <VkBlock />
+      <Faq />
       <Footer />
     </>
   );

@@ -1,0 +1,29 @@
+@use "styles/mixins";
+@use "styles/typography";
+@use "styles/media";
+
+
+.container {
+  @include mixins.layout;
+  margin-top: 160px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  @include media.for-tablet {
+    display: block;
+    margin-top: 80px;
+  }
+}
+
+.title {
+  @include typography.h2;
+}
+
+.side {
+  width: 60%;
+
+  @include media.for-tablet {
+    width: 100%;
+  }
+}

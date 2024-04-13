@@ -48,16 +48,17 @@
 
 .textMobile {
   @include typography.body;
-  @include media.for-phone {
-    font-size: 0px;
-  }
-
 }
 
 .text {
   @include typography.body;
+  padding-left: 24px;
 
   p {
-    margin: 12px 50px;
+    margin: 12px 0;
+  }
+
+  @include media.for-phone {
+    padding-left: 0;
   }
 }

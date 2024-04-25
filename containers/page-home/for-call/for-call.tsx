@@ -6,11 +6,11 @@ export const ForCall: FC = () => {
   return (
     <div className={css.container}>
       <div className={css.title}>
-        <div className={css.titleText}>
+        <h2 className={css.titleText}>
           Не можешь двигаться сам? Обратись скорее к нам!
-        </div>
+        </h2>
         <a href="#ForCall">
-          <button className={css.btnForCall}>Как нас вызвать</button>
+          <div className={css.btnForCall}>Как нас вызвать</div>
         </a>
       </div>
       <div className={css.text}>

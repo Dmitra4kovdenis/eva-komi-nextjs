@@ -26,7 +26,8 @@ export const Banner: FC = () => {
         />
         <div className={css.content}>
           <h1 className={css.title}>
-            Наши эвакуаторы – ваша безопасность на дороге.
+            Эвакуатор в Сыктывкаре - <br />
+            быстро, качественно, не дорого
           </h1>
           <div className={css.text}>
             Эвакуация автомобилей по Сыктывкару и Республике Коми

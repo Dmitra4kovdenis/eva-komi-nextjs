@@ -5,11 +5,11 @@ export default function Document() {
   return (
     <Html lang="ru">
       <Head>
-        <meta name="yandex-verification" content="3aabd796fcbf9243" />
         <meta
           name="google-site-verification"
-          content="1IFMi_G9dc65EXufGj9_eeFZqBfxx9tshCXppJ3ipjU"
+          content="mhCrUZ_agoGt5Zst9mllZvMhl4HLaQFuIsKExpPRiZI"
         />
+        <meta name="yandex-verification" content="b2563083b856b8fa" />
       </Head>
       <body>
         <Main />

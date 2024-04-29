@@ -9,6 +9,10 @@ interface CardPriceProps {
   text: string;
 }
 
+const priceToSchema = (price: string): string => {
+  return Number(price.replaceAll(" ", "")).toFixed(2);
+};
+
 // schema.org согласно доке https://yandex.ru/support/webmaster/supported-schemas/strict-microdata-offers.html
 export const CardPrice: FC<CardPriceProps> = ({
   price,
@@ -33,7 +37,7 @@ export const CardPrice: FC<CardPriceProps> = ({
         {text}
       </div>
       <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
-        <meta itemProp="price" content={price} />
+        <meta itemProp="price" content={priceToSchema(price)} />
         <meta itemProp="priceCurrency" content="RUB" />
         <link itemProp="availability" href="http://schema.org/InStock" />
         <div className={css.price}>{price} Руб.</div>

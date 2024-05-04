@@ -95,6 +95,10 @@
   @include mixins.layout;
   @include typography.caption;
   margin-top: 40px;
+
+  a:hover {
+    color: orange;
+  }
 }
 
 .vk {

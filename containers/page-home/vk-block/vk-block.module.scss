@@ -42,7 +42,11 @@
 }
 
 .text {
-  @include typography.body
+  @include typography.body;
+
+  a:hover {
+    color: orange;
+  }
 }
 
 .img {
@@ -50,5 +54,14 @@
 
   @include media.for-phone {
     width: 100%;
+  }
+
+  img {
+    will-change: transform;
+    transition: all 200ms ease-in-out;
+  }
+
+  &:hover img {
+    transform: scale(1.02);
   }
 }

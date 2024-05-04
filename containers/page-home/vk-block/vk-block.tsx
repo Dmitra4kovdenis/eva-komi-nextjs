@@ -7,7 +7,7 @@ const VkBlock = () => {
         <h2 className={css.title}>Мы Вконтакте</h2>
         <div className={css.text}>
           Подписывайтесь на нас{" "}
-          <a href="https://vk.com/evakyatorkomi">
+          <a target="_blank" href="https://vk.com/evakyatorkomi">
             <b>https://vk.com/evakyatorkomi</b>
           </a>
           <ul>
@@ -18,7 +18,13 @@ const VkBlock = () => {
           </ul>
         </div>
       </div>
-      <img alt="" src="/vk-image.jpg" className={css.img} />
+      <a
+        href="https://vk.com/evakyatorkomi"
+        target="_blank"
+        className={css.img}
+      >
+        <img alt="" src="/vk-image.jpg" />
+      </a>
     </div>
   );
 };

@@ -31,6 +31,7 @@ export const CallInstructions: FC = () => {
                   • Vk:{" "}
                   <a
                     className={css.phone}
+                    target="_blank"
                     href={"https://vk.com/evakyatorkomi"}
                   >
                     {" "}

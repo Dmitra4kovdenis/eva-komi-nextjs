@@ -18,8 +18,15 @@ const Faq = () => {
                     <b>8 (912) 864-01-11</b>
                   </a>
                 </li>
-                <li>Написать в нашу группу ВК https://vk.com/evakyatorkomi</li>
-                <li>Написать в мессенджер ВК, telegram - 89630221679</li>
+                <li>
+                  Написать в нашу группу ВК{" "}
+                  <a href="https://vk.com/evakyatorkomi" target="_blank">
+                    <b>https://vk.com/evakyatorkomi</b>
+                  </a>
+                </li>
+                <li>
+                  Написать в мессенджер ВК, telegram - <b>89630221679</b>
+                </li>
               </ul>
             </>
           }

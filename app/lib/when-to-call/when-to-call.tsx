@@ -1,6 +1,6 @@
 import { FC } from "react";
 import css from "./when-to-call.module.scss";
-import WhenToCallCases from "@/containers/page-home/when-to-call/when-to-call-cases";
+import WhenToCallCases from "./when-to-call-cases";
 import Image from "next/image";
 export const WhenToCall: FC = () => {
   return (

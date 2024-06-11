@@ -1,6 +1,8 @@
+"use client";
+
 import { FC } from "react";
 import css from "./header.module.scss";
-import ProgressBar from "@/containers/header/progress-bar";
+import ProgressBar from "./progress-bar";
 import { phoneCompact, phoneFull } from "@/constants";
 
 export const Header: FC = () => {
@@ -8,7 +10,7 @@ export const Header: FC = () => {
     <div className={css.container}>
       <div className={css.wrapper}>
         <div className={css.logo}>
-          <a href="#Banner">
+          <a href="/">
             <img alt="logo" src="/eva-komi-logo.svg" />
             <div>Сыктывкар и Республика Коми</div>
           </a>

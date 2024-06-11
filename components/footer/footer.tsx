@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import css from "./footer.module.scss";
 import { phoneCompact, phoneFull } from "@/constants";

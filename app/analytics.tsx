@@ -1,23 +1,13 @@
-import { Html, Head, Main, NextScript } from "next/document";
+"use client";
 import Script from "next/script";
 
-export default function Document() {
+export default function Analytics() {
   return (
-    <Html lang="ru">
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="mhCrUZ_agoGt5Zst9mllZvMhl4HLaQFuIsKExpPRiZI"
-        />
-        <meta name="yandex-verification" content="b2563083b856b8fa" />
-      </Head>
-      <body>
-        <Main />
-        <NextScript />
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+    <>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `<!-- Yandex.Metrika counter -->
+<Script id="yandex-metrika" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -32,9 +22,17 @@ export default function Document() {
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/93501283" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->`,
-          }}
-        />
-      </body>
-    </Html>
+        }}
+      />
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HP1XWKG7JM');
+            `}
+      </Script>
+    </>
   );
 }

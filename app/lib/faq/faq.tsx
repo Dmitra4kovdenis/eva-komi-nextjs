@@ -1,5 +1,5 @@
 import css from "./faq.module.scss";
-import FaqCard from "@/containers/page-home/faq/faq-card/faq-card";
+import FaqCard from "./faq-card/faq-card";
 
 const Faq = () => {
   return (
